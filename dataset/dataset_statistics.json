@@ -1,0 +1,52 @@
+{
+  "total_entries": 1000,
+  "by_intent_type": {
+    "IntentSpecification": 286,
+    "Intent": 357,
+    "ProbeIntent": 214,
+    "IntentReport": 143
+  },
+  "by_action": {
+    "POST": 144,
+    "DELETE": 142,
+    "PATCH": 142,
+    "POST (ProbeIntent)": 71,
+    "GET": 287,
+    "GET (IntentReport)": 214
+  },
+  "by_lifecycle_status": {
+    "Active": 498,
+    "Created": 502
+  },
+  "by_service_type": {
+    "CloudService": 102,
+    "EdgeComputing": 96,
+    "VoiceService": 113,
+    "EventWirelessAccess": 85,
+    "NetworkSlice": 98,
+    "StreamingApplication": 80,
+    "IoTService": 111,
+    "BroadbandService": 99,
+    "VideoStreaming": 115,
+    "DataAnalytics": 101
+  },
+  "by_priority": {
+    "5": 196,
+    "4": 211,
+    "2": 196,
+    "1": 193,
+    "3": 204
+  },
+  "by_context": {
+    "Broadband services": 110,
+    "Smart city": 105,
+    "5G networks": 84,
+    "IoT networks": 91,
+    "intent-based networks": 83,
+    "Autonomous services": 97,
+    "Enterprise networks": 104,
+    "Cloud services": 107,
+    "Edge computing": 127,
+    "Video streaming": 92
+  }
+}
