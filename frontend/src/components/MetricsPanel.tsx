@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from '../contexts/TranslationContext';
-import { BarChart3, PieChart, TrendingUp, Target, Activity } from 'lucide-react';
+import { TrendingUp, Target, Activity } from 'lucide-react';
 
 export const MetricsPanel: React.FC = () => {
   const { evaluationResults } = useTranslation();
@@ -36,7 +36,7 @@ export const MetricsPanel: React.FC = () => {
         </div>
 
         <div className="space-y-4">
-          {intentTypeData.map((item, index) => (
+          {intentTypeData.map((item) => (
             <div key={item.name} className="space-y-2">
               <div className="flex items-center justify-between text-sm">
                 <span className="text-slate-300">{item.name}</span>

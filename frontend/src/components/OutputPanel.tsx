@@ -3,7 +3,6 @@ import { useTranslation } from '../contexts/TranslationContext';
 import {
   Code,
   CheckCircle2,
-  AlertCircle,
   Copy,
   Download,
   Clock,

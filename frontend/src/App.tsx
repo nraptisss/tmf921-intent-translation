@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import { TranslationProvider } from './contexts/TranslationContext';
 import { Header } from './components/Header';
 import { InputPanel } from './components/InputPanel';

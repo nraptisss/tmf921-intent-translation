@@ -1,4 +1,30 @@
 # TMF921 Intent Translator - Python Dependencies
+
+# Core
 fastapi>=0.104.0
 uvicorn>=0.24.0
 pydantic>=2.5.0
+
+# Local LLM Support (optional - install based on provider)
+
+## Ollama (Recommended for easiest setup)
+# Install: pip install ollama
+ollama>=0.1.0
+
+## llama.cpp via ctransformers (Good for quantized models)
+# Install: pip install ctransformers
+# ctransformers>=0.2.27
+
+## HuggingFace Transformers (Most flexible, supports GPU)
+# Install: pip install transformers torch accelerate bitsandbytes
+# transformers>=4.36.0
+# torch>=2.0.0
+# accelerate>=0.25.0
+# bitsandbytes>=0.41.0  # For 4-bit quantization
+
+# GPU Support
+# torch>=2.0.0  # With CUDA support
+
+# Optional utilities
+# sentencepiece>=0.1.99  # For some tokenizers
+# protobuf>=3.20.0  # For protocol buffers

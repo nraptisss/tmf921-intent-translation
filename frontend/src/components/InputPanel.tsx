@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Sparkles, Mic, Keyboard, HelpCircle } from 'lucide-react';
+import { Sparkles, Mic, Keyboard, HelpCircle } from 'lucide-react';
 import { useTranslation } from '../contexts/TranslationContext';
 
 const EXAMPLE_INTENTS = [
@@ -11,7 +11,7 @@ const EXAMPLE_INTENTS = [
 ];
 
 export const InputPanel: React.FC = () => {
-  const { translateIntent, isTranslating, currentTranslation } = useTranslation();
+  const { translateIntent, isTranslating } = useTranslation();
   const [inputMode, setInputMode] = useState<'text' | 'voice'>('text');
   const [nlIntent, setNlIntent] = useState('');
 

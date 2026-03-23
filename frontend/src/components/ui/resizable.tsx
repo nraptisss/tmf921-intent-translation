@@ -11,8 +11,8 @@ interface ResizablePanelProps {
 export const ResizablePanel: React.FC<ResizablePanelProps> = ({
   children,
   defaultSize = 50,
-  minSize = 20,
-  maxSize = 80,
+  minSize: _minSize = 20,
+  maxSize: _maxSize = 80,
   className = ''
 }) => {
   return (

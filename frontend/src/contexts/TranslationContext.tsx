@@ -128,7 +128,7 @@ const detectAction = (nlIntent: string): string => {
   return 'GET';
 };
 
-const detectIntentType = (nlIntent: string, action: string): string => {
+const detectIntentType = (nlIntent: string, _action: string): string => {
   const lowerIntent = nlIntent.toLowerCase();
 
   if (lowerIntent.includes('probe') || lowerIntent.includes('test') || lowerIntent.includes('simulate') || lowerIntent.includes('preview')) {
@@ -265,7 +265,7 @@ const extractParameters = (nlIntent: string) => {
   };
 };
 
-const calculateConfidence = (nlIntent: string, mapping: TMF921Mapping): number => {
+const calculateConfidence = (nlIntent: string, _mapping: TMF921Mapping): number => {
   let confidence = 0.7;
 
   // Boost confidence based on keyword matches
@@ -370,7 +370,7 @@ export const TranslationProvider: React.FC<TranslationProviderProps> = ({ childr
     return result;
   }, []);
 
-  const evaluateSystem = useCallback(async (datasetSize: number = 100): Promise<EvaluationMetrics> => {
+  const evaluateSystem = useCallback(async (_datasetSize: number = 100): Promise<EvaluationMetrics> => {
     setEvaluationProgress(0);
 
     // Simulated evaluation metrics
